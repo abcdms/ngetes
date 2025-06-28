@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Demo Eskul Informatika - MPLS</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- TypeIt -->
+  <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="hero">
+    <div class="intro-box" id="introBox">
+      <h1 class="intro-title">Halo, Peserta MPLS! 👋</h1>
+      <p class="intro-sub">Sudah siap kenalan dengan Eskul paling keren?</p>
+      <div class="button-container">
+        <button class="btn yes" onclick="lanjut()">SIAP!</button>
+        <button class="btn no" onclick="lanjut()">Belum, tapi pengen tahu!</button>
+      </div>
+    </div>
+
+    <div class="content" id="mainContent">
+      <div class="messageC"></div>
+      <button id="btnShowModal" class="btn highlight" onclick="showModal()">Lanjut ke Info Eskul</button>
+    </div>
+
+    <div id="modalOverlay" class="modal-overlay">
+      <div class="modal-content">
+        <h2>🎓 Eskul Informatika</h2>
+        <p>Mau gabung dan belajar coding, design, AI, dan teknologi masa depan?</p>
+        <div>
+          <button class="btn yes" onclick="goToWhatsApp('Iya')">Mau Banget!</button>
+          <button class="btn no" onclick="goToWhatsApp('Tidak')">Nanti Aja</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <audio id="backgroundMusic" loop>
+    <source src="https://github.com/abcdms/only/raw/refs/heads/main/ONLY.mp3" type="audio/mp3" />
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
